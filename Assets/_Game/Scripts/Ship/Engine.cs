@@ -5,7 +5,7 @@ using Variables;
 namespace Ship
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class Engine : MonoBehaviour
+    public class Engine : ShipPart
     {
         [SerializeField] private FloatVariable _throttlePower;
         [SerializeField] private FloatVariable _rotationPower;
