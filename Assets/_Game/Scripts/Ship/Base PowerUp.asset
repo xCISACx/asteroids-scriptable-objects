@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Base PowerUp
   m_EditorClassIdentifier: 
   m_UXML: {fileID: 9197481963319205126, guid: e29069294990ee942a44cddb80d6fbae, type: 3}
-  type: 3
-  HullHealthChange: 7
+  type: 0
+  HullHealthChange: 0
   GunCooldownChange: 0
-  ThrottleChange: 0
-  RotationChange: 0
+  ThrottleChange: 5.48
+  RotationChange: 8.12

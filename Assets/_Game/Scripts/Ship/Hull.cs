@@ -13,7 +13,7 @@ namespace Ship
         
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (string.Equals(other.gameObject.tag, "Asteroid"))
+            if (other.gameObject.CompareTag("Asteroid"))
             {
                 Debug.Log("Hull collided with Asteroid");
                 // TODO can we bake this into one call?
