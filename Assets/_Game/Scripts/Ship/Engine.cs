@@ -7,11 +7,11 @@ namespace Ship
     [RequireComponent(typeof(Rigidbody2D))]
     public class Engine : ShipPart
     {
-        [SerializeField] private FloatVariable _throttlePower;
-        [SerializeField] private FloatVariable _rotationPower;
+        [SerializeField] public float ThrottlePower;
+        [SerializeField] public float RotationPower;
         
-        [SerializeField] private float _throttlePowerSimple;
-        [SerializeField] private float _rotationPowerSimple;
+        //[SerializeField] private float _throttlePowerSimple;
+        //[SerializeField] private float _rotationPowerSimple;
 
         private Rigidbody2D _rigidbody;
         
@@ -39,17 +39,17 @@ namespace Ship
     
         public void Throttle()
         {
-            _rigidbody.AddForce(transform.up * _throttlePower.Value, ForceMode2D.Force);
+            _rigidbody.AddForce(transform.up * ThrottlePower, ForceMode2D.Force);
         }
 
         public void SteerLeft()
         {
-            _rigidbody.AddTorque(_rotationPower.Value, ForceMode2D.Force);
+            _rigidbody.AddTorque(RotationPower, ForceMode2D.Force);
         }
 
         public void SteerRight()
         {
-            _rigidbody.AddTorque(-_rotationPower.Value, ForceMode2D.Force);
+            _rigidbody.AddTorque(-RotationPower, ForceMode2D.Force);
         }
     }
 }

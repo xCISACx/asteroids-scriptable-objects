@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Label text="Hello World! From UXML" />
+    <uie:PropertyField name="SOField" binding-path="ShipConfigSO" />
+    <uie:PropertyField name="EngineField" binding-path="EngineScript" focusable="false" style="visibility: visible; display: flex; opacity: 1;" />
+    <uie:PropertyField name="HealthField" binding-path="HealthScript" />
+    <uie:PropertyField name="GunField" binding-path="GunScript" />
+    <uie:ObjectField label="Configuration" name="ConfigFieldCustom" />
+    <ui:Button text="Load Configuration" display-tooltip-when-elided="true" name="LoadConfigButton" binding-path="LoadConfiguration" />
+</ui:UXML>

@@ -8,7 +8,7 @@ namespace Ship
     public class Health : MonoBehaviour
     {
         private int _currentHealth = 10;
-        [SerializeField] private int _maxHealth = 10;
+        [SerializeField] public int MaxHealth = 10;
         
         private const int MIN_HEALTH = 0;
 

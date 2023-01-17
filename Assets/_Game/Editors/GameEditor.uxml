@@ -1,11 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
     <Style src="project://database/Assets/_Game/Editors/GameEditor.uss?fileID=7433441132597879392&amp;guid=468688dfb3e5fc040a13647bd33b5adb&amp;type=3#GameEditor" />
     <ui:Label tabindex="-1" text="CUSTOM FIELDS" display-tooltip-when-elided="true" enable-rich-text="true" style="padding-top: 1px; margin-top: 3px; margin-bottom: 5px;" />
-    <ui:EnumField label="Part Type" type="PowerUp+PartType, Assembly-CSharp" binding-path="type" view-data-key="PartType" name="PartTypeCustom" />
-    <ui:SliderInt picking-mode="Ignore" label="Hull Health Change" value="42" high-value="100" binding-path="HullHealthChange" name="HullHealthChangeCustom" />
-    <ui:Slider picking-mode="Ignore" label="Gun Cooldown Change" value="0" high-value="5" binding-path="GunCooldownChange" name="GunCooldownChangeCustom" />
-    <ui:Slider picking-mode="Ignore" label="Throttle Change" value="0" high-value="10" binding-path="ThrottleChange" name="ThrottleChangeCustom" />
-    <ui:Slider picking-mode="Ignore" label="Rotation Change" value="0" high-value="10" binding-path="RotationChange" name="RotationChangeCustom" />
+    <ui:EnumField label="Part Type" type="PowerUp+PartType, Assembly-CSharp" binding-path="type" view-data-key="type" name="PartTypeCustom" />
+    <ui:SliderInt picking-mode="Ignore" label="Hull Health Change" value="42" high-value="100" binding-path="HullHealthChange" name="HullHealthChangeCustom" view-data-key="HullHealthChange" />
+    <ui:Slider picking-mode="Ignore" label="Gun Cooldown Change" value="0" high-value="5" binding-path="GunCooldownChange" name="GunCooldownChangeCustom" view-data-key="GunCooldownChange" />
+    <ui:Slider picking-mode="Ignore" label="Throttle Change" value="0" high-value="10" binding-path="ThrottleChange" name="ThrottleChangeCustom" view-data-key="ThrottleChange" />
+    <ui:Slider picking-mode="Ignore" label="Rotation Change" value="0" high-value="10" binding-path="RotationChange" name="RotationChangeCustom" view-data-key="RotationChange" />
     <ui:Label tabindex="-1" text="PROPERTY FIELDS" display-tooltip-when-elided="true" enable-rich-text="true" style="padding-top: 48px; margin-top: 3px; margin-bottom: 5px;" />
     <uie:PropertyField binding-path="type" label="Part Type" name="PartType" tabindex="1" focusable="false" style="display: flex;" />
     <uie:PropertyField binding-path="HullHealthChange" label="Hull Health Change" focusable="false" name="HullHealthChange" />
