@@ -28,6 +28,7 @@ namespace Editors
 
         public override VisualElement CreateInspectorGUI()
         {
+            m_VisualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/_Game/Editors/ShipEditorWindow.uxml");
             // Each editor window contains a root VisualElement object
             var ve = m_VisualTreeAsset.CloneTree();
 
@@ -66,6 +67,7 @@ namespace Editors
         public void LoadConfiguration()
         {
             ShipClass.LoadConfiguration();
+            EditorUtility.SetDirty(ShipClass.ShipConfigSO);
         }
 
         /*public void SaveConfiguration()
@@ -76,6 +78,8 @@ namespace Editors
         public void OnObjectFieldChangedEvent(ChangeEvent<Object> evt)
         {
             Debug.Log($"Value changed. Old value: {evt.previousValue}, new value: {evt.newValue}");
+
+            if (!ShipClass.ShipConfigSO) return;
             
             ShipClass.ShipConfigSO = (ShipConfiguration) _configField.value;
         }
