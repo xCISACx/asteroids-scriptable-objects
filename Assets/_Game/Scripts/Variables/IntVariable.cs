@@ -7,11 +7,21 @@ namespace Variables
     [CreateAssetMenu(fileName = "new FloatVariable", menuName = "ScriptableObjects/Variables/IntVariable")]
     public class IntVariable : ScriptableObject
     {
-        [SerializeField] private int _value;
+        [SerializeField] private int _startValue;
 
         private int _currentValue;
+        
+        public int StartValue
+        {
+            get => _startValue;
+            set => _startValue = value;
+        }
 
-        public int Value => _currentValue;
+        public int Value
+        {
+            get => _currentValue;
+            set => _currentValue = value;
+        }
 
         public virtual void ApplyChange(int change)
         {
@@ -25,7 +35,7 @@ namespace Variables
 
         private void OnEnable()
         {
-            _currentValue = _value;
+            _currentValue = _startValue;
         }
     }
 

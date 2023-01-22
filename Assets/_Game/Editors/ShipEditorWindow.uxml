@@ -1,9 +1,22 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
-    <ui:Label text="Hello World! From UXML" />
-    <uie:PropertyField name="SOField" binding-path="ShipConfigSO" />
-    <uie:PropertyField name="EngineField" binding-path="EngineScript" focusable="false" style="visibility: visible; display: flex; opacity: 1;" />
-    <uie:PropertyField name="HealthField" binding-path="HealthScript" />
+    <ui:Label text="References&#10;" />
     <uie:PropertyField name="GunField" binding-path="GunScript" />
+    <uie:PropertyField name="HealthField" binding-path="HealthScript" />
+    <uie:PropertyField name="EngineField" binding-path="EngineScript" focusable="false" style="visibility: visible; display: flex; opacity: 1;" />
+    <uie:PropertyField name="SOField" binding-path="ShipConfigSO" />
+    <ui:Label tabindex="-1" text="&#10;Property Fields&#10;" display-tooltip-when-elided="true" />
+    <uie:PropertyField name="ThrottleChangeProperty" binding-path="EngineThrottlePower" />
+    <uie:PropertyField name="RotationChangeProperty" binding-path="EngineRotationPower" />
+    <uie:PropertyField name="HealthChangeProperty" binding-path="MaxHealth" />
+    <uie:PropertyField name="GunCooldownChangeProperty" binding-path="GunCooldown" />
+    <ui:Label tabindex="-1" text="&#10;Preview Values&#10;" display-tooltip-when-elided="true" />
+    <ui:FloatField label="Engine Throttle Power" value="42.2" name="ThrottleChangeCustom" />
+    <ui:FloatField label="Engine Rotation Power" value="42.2" name="RotationChangeCustom" />
+    <ui:IntegerField label="Max Health" value="42" name="HullHealthChangeCustom" />
+    <ui:FloatField label="Gun Cooldown" value="42.2" name="GunCooldownChangeCustom" />
     <uie:ObjectField label="Configuration" name="ConfigFieldCustom" />
-    <ui:Button text="Load Configuration" display-tooltip-when-elided="true" name="LoadConfigButton" binding-path="LoadConfiguration" />
+    <ui:Button text="Apply Previewed Configuration" display-tooltip-when-elided="true" name="LoadConfigButton" binding-path="LoadConfiguration" />
+    <uie:PropertyField name="SavePathCustom" binding-path="SavePath" />
+    <uie:PropertyField name="FileNameCustom" binding-path="FileName" />
+    <ui:Button text="Save Configuration" display-tooltip-when-elided="true" name="SaveConfigButton" binding-path="SaveConfiguration" />
 </ui:UXML>

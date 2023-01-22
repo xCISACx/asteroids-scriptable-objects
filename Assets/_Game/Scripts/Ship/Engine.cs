@@ -37,7 +37,7 @@ namespace Ship
         {
             _rigidbody = GetComponent<Rigidbody2D>();
             Ship = GetComponent<ShipClass>();
-            LoadConfiguration();
+            //LoadConfiguration();
 
         }
     

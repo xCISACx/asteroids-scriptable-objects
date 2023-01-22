@@ -8,7 +8,7 @@ namespace Variables
     public class IntReference
     {
         // TODO Can we make this look nicer with a custom property drawer?
-        [SerializeField] private IntVariable _intVariable;
+        [SerializeField] public IntVariable _intVariable;
         [SerializeField] private int _simpleValue;
         [SerializeField] private bool _useSimple;
 
@@ -28,6 +28,12 @@ namespace Variables
         {
             return _useSimple ? _simpleValue : _intVariable.Value;
         }
+
+        public void SetValue(int newValue)
+        {
+            _intVariable.SetValue(newValue);
+        }
+        
         public void ApplyChange(int change)
         {
             if (_useSimple)

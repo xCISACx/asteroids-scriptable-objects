@@ -41,8 +41,8 @@ namespace Editors
             _partTypeField.RegisterCallback<ChangeEvent<Enum>>(OnEnumValueChangedEvent);
 
             // VisualElements objects can contain other VisualElement following a tree hierarchy.
-            VisualElement label = new Label("Hello World! From C#");
-            ve.Add(label);
+            //VisualElement label = new Label("Hello World! From C#");
+            //ve.Add(label);
 
             // Instantiate UXML
             return ve;

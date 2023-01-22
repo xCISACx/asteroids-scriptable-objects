@@ -2,12 +2,12 @@
     <Style src="project://database/Assets/_Game/Editors/GameEditor.uss?fileID=7433441132597879392&amp;guid=468688dfb3e5fc040a13647bd33b5adb&amp;type=3#GameEditor" />
     <ui:Label tabindex="-1" text="CUSTOM FIELDS" display-tooltip-when-elided="true" enable-rich-text="true" style="padding-top: 1px; margin-top: 3px; margin-bottom: 5px;" />
     <ui:EnumField label="Part Type" type="PowerUp+PartType, Assembly-CSharp" binding-path="type" view-data-key="type" name="PartTypeCustom" />
-    <ui:SliderInt picking-mode="Ignore" label="Hull Health Change" value="42" high-value="100" binding-path="HullHealthChange" name="HullHealthChangeCustom" view-data-key="HullHealthChange" />
-    <ui:Slider picking-mode="Ignore" label="Gun Cooldown Change" value="0" high-value="5" binding-path="GunCooldownChange" name="GunCooldownChangeCustom" view-data-key="GunCooldownChange" />
-    <ui:Slider picking-mode="Ignore" label="Throttle Change" value="0" high-value="10" binding-path="ThrottleChange" name="ThrottleChangeCustom" view-data-key="ThrottleChange" />
-    <ui:Slider picking-mode="Ignore" label="Rotation Change" value="0" high-value="10" binding-path="RotationChange" name="RotationChangeCustom" view-data-key="RotationChange" />
+    <ui:SliderInt picking-mode="Ignore" label="Hull Health Change" value="42" high-value="100" binding-path="HullHealthChange" name="HullHealthChangeCustom" view-data-key="HullHealthChange" show-input-field="true" />
+    <ui:Slider picking-mode="Ignore" label="Gun Cooldown Change" value="0" high-value="5" binding-path="GunCooldownChange" name="GunCooldownChangeCustom" view-data-key="GunCooldownChange" show-input-field="true" />
+    <ui:Slider picking-mode="Ignore" label="Throttle Change" value="0" high-value="10" binding-path="ThrottleChange" name="ThrottleChangeCustom" view-data-key="ThrottleChange" show-input-field="true" />
+    <ui:Slider picking-mode="Ignore" label="Rotation Change" value="0" high-value="10" binding-path="RotationChange" name="RotationChangeCustom" view-data-key="RotationChange" show-input-field="true" />
     <ui:Label tabindex="-1" text="PROPERTY FIELDS" display-tooltip-when-elided="true" enable-rich-text="true" style="padding-top: 48px; margin-top: 3px; margin-bottom: 5px;" />
-    <uie:PropertyField binding-path="type" label="Part Type" name="PartType" tabindex="1" focusable="false" style="display: flex;" />
+    <uie:PropertyField binding-path="type" label="Part Type" name="PartType" tabindex="1" focusable="false" style="display: flex; visibility: visible;" />
     <uie:PropertyField binding-path="HullHealthChange" label="Hull Health Change" focusable="false" name="HullHealthChange" />
     <uie:PropertyField binding-path="GunCooldownChange" name="GunCooldownChange" />
     <uie:PropertyField binding-path="ThrottleChange" name="ThrottleChange" />

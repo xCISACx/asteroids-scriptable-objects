@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d626a9dfc8fa4f82bb232724372fa572, type: 3}
-  m_Name: Ship Configuration 1
+  m_Name: NewShipConfig.assetNewShipConfig
   m_EditorClassIdentifier: 
-  ThrottlePower: 4
-  RotationPower: 7
-  MaxHealth: 15
-  GunCooldown: 0.1
+  ThrottlePower: 5
+  RotationPower: 4
+  MaxHealth: 12
+  GunCooldown: 0.2
