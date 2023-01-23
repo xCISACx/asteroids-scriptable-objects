@@ -1116,14 +1116,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShipConfigSO: {fileID: 0}
   EngineScript: {fileID: 2970632032457142650}
-  EngineThrottlePower: 5
-  EngineRotationPower: 4
+  EngineThrottlePower: 6.91
+  EngineRotationPower: 4.54
   HealthScript: {fileID: 2970632032457142648}
   HullScript: {fileID: 2970632032457142652}
-  MaxHealth: 15
+  MaxHealth: 49
   GunScript: {fileID: 238089999}
-  GunCooldown: 0.2
-  SavePath: Assets/_Game/Scripts/Ship/
+  GunCooldown: 0.63
+  SavePath: Assets/_Game/Scripts/Ship/Configs/
   FileName: NewShipConfig.asset
   ActivePowerUps: []
 --- !u!114 &2970632032457142648 stripped

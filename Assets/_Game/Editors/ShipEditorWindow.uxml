@@ -6,15 +6,15 @@
         <uie:PropertyField name="EngineField" binding-path="EngineScript" focusable="false" style="visibility: visible; display: flex; opacity: 1;" />
         <uie:PropertyField name="SOField" binding-path="ShipConfigSO" />
     </ui:Label>
-    <ui:Label tabindex="-1" text="&#10;Property Fields&#10;" display-tooltip-when-elided="true" style="display: none;">
-        <uie:PropertyField name="ThrottleChangeProperty" binding-path="EngineThrottlePower" />
-        <uie:PropertyField name="RotationChangeProperty" binding-path="EngineRotationPower" />
-        <uie:PropertyField name="HealthChangeProperty" binding-path="MaxHealth" />
-        <uie:PropertyField name="GunCooldownChangeProperty" binding-path="GunCooldown" />
-    </ui:Label>
-    <ui:Label tabindex="-1" text="Preview Values" display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: middle-center; font-size: 18px; white-space: nowrap; -unity-paragraph-spacing: 0;" />
+    <ui:Label tabindex="-1" text="Saved Values" display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: middle-center; font-size: 18px; white-space: nowrap; -unity-paragraph-spacing: 0;" />
+    <ui:Label tabindex="-1" text="Your saved configuration will have these values." display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: middle-center; font-size: 13px; white-space: normal; -unity-paragraph-spacing: 0; text-overflow: clip;" />
+    <uie:PropertyField name="GunCooldownChangeProperty" binding-path="GunCooldown" />
+    <uie:PropertyField name="HealthChangeProperty" binding-path="MaxHealth" />
+    <uie:PropertyField name="RotationChangeProperty" binding-path="EngineRotationPower" />
+    <uie:PropertyField name="ThrottleChangeProperty" binding-path="EngineThrottlePower" />
+    <ui:Label tabindex="-1" text="Loaded Values" display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: middle-center; font-size: 18px; white-space: nowrap; -unity-paragraph-spacing: 0;" />
     <ui:Label tabindex="-1" text="Your ship will have these values after applying." display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: middle-center; font-size: 13px; white-space: normal; -unity-paragraph-spacing: 0; text-overflow: clip;" />
-    <ui:FloatField label="Engine Throttle Power" value="0" name="ThrottleChangeCustom" readonly="true" is-delayed="false" />
+    <ui:FloatField label="Engine Throttle Power" value="0" name="ThrottleChangeCustom" readonly="false" is-delayed="false" />
     <ui:FloatField label="Engine Rotation Power" value="0" name="RotationChangeCustom" />
     <ui:IntegerField label="Max Health" value="0" name="HullHealthChangeCustom" />
     <ui:FloatField label="Gun Cooldown" value="0" name="GunCooldownChangeCustom" />
