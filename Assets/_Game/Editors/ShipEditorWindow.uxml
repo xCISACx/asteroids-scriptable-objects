@@ -1,22 +1,28 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
-    <ui:Label text="References&#10;" />
-    <uie:PropertyField name="GunField" binding-path="GunScript" />
-    <uie:PropertyField name="HealthField" binding-path="HealthScript" />
-    <uie:PropertyField name="EngineField" binding-path="EngineScript" focusable="false" style="visibility: visible; display: flex; opacity: 1;" />
-    <uie:PropertyField name="SOField" binding-path="ShipConfigSO" />
-    <ui:Label tabindex="-1" text="&#10;Property Fields&#10;" display-tooltip-when-elided="true" />
-    <uie:PropertyField name="ThrottleChangeProperty" binding-path="EngineThrottlePower" />
-    <uie:PropertyField name="RotationChangeProperty" binding-path="EngineRotationPower" />
-    <uie:PropertyField name="HealthChangeProperty" binding-path="MaxHealth" />
-    <uie:PropertyField name="GunCooldownChangeProperty" binding-path="GunCooldown" />
-    <ui:Label tabindex="-1" text="&#10;Preview Values&#10;" display-tooltip-when-elided="true" />
-    <ui:FloatField label="Engine Throttle Power" value="42.2" name="ThrottleChangeCustom" />
-    <ui:FloatField label="Engine Rotation Power" value="42.2" name="RotationChangeCustom" />
-    <ui:IntegerField label="Max Health" value="42" name="HullHealthChangeCustom" />
-    <ui:FloatField label="Gun Cooldown" value="42.2" name="GunCooldownChangeCustom" />
+    <ui:Label tabindex="-1" text="Ship Configurator" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 39px; -unity-text-align: middle-center; -unity-text-outline-width: 1px; background-color: rgb(59, 144, 255); color: rgb(7, 0, 142);" />
+    <ui:Label text="References&#10;" style="display: none;">
+        <uie:PropertyField name="GunField" binding-path="GunScript" />
+        <uie:PropertyField name="HealthField" binding-path="HealthScript" />
+        <uie:PropertyField name="EngineField" binding-path="EngineScript" focusable="false" style="visibility: visible; display: flex; opacity: 1;" />
+        <uie:PropertyField name="SOField" binding-path="ShipConfigSO" />
+    </ui:Label>
+    <ui:Label tabindex="-1" text="&#10;Property Fields&#10;" display-tooltip-when-elided="true" style="display: none;">
+        <uie:PropertyField name="ThrottleChangeProperty" binding-path="EngineThrottlePower" />
+        <uie:PropertyField name="RotationChangeProperty" binding-path="EngineRotationPower" />
+        <uie:PropertyField name="HealthChangeProperty" binding-path="MaxHealth" />
+        <uie:PropertyField name="GunCooldownChangeProperty" binding-path="GunCooldown" />
+    </ui:Label>
+    <ui:Label tabindex="-1" text="Preview Values" display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: middle-center; font-size: 18px; white-space: nowrap; -unity-paragraph-spacing: 0;" />
+    <ui:Label tabindex="-1" text="Your ship will have these values after applying." display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: middle-center; font-size: 13px; white-space: normal; -unity-paragraph-spacing: 0; text-overflow: clip;" />
+    <ui:FloatField label="Engine Throttle Power" value="0" name="ThrottleChangeCustom" readonly="true" is-delayed="false" />
+    <ui:FloatField label="Engine Rotation Power" value="0" name="RotationChangeCustom" />
+    <ui:IntegerField label="Max Health" value="0" name="HullHealthChangeCustom" />
+    <ui:FloatField label="Gun Cooldown" value="0" name="GunCooldownChangeCustom" />
+    <ui:Label tabindex="-1" text="Save and Load" display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: middle-center; font-size: 18px; white-space: nowrap; -unity-paragraph-spacing: 0;" />
+    <ui:Label tabindex="-1" text="Drop a Ship Configuration here and press the button to load it!" display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: middle-center; font-size: 13px; white-space: normal; -unity-paragraph-spacing: 0; text-overflow: clip;" />
     <uie:ObjectField label="Configuration" name="ConfigFieldCustom" />
-    <ui:Button text="Apply Previewed Configuration" display-tooltip-when-elided="true" name="LoadConfigButton" binding-path="LoadConfiguration" />
     <uie:PropertyField name="SavePathCustom" binding-path="SavePath" />
     <uie:PropertyField name="FileNameCustom" binding-path="FileName" />
-    <ui:Button text="Save Configuration" display-tooltip-when-elided="true" name="SaveConfigButton" binding-path="SaveConfiguration" />
+    <ui:Button text="Apply Previewed Configuration" display-tooltip-when-elided="true" name="LoadConfigButton" binding-path="LoadConfiguration" style="font-size: 20px; background-color: rgb(0, 114, 233);" />
+    <ui:Button text="Save Configuration" display-tooltip-when-elided="true" name="SaveConfigButton" binding-path="SaveConfiguration" style="font-size: 20px; background-color: rgb(60, 154, 2);" />
 </ui:UXML>

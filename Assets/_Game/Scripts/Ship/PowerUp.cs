@@ -17,22 +17,30 @@ public class PowerUp : ScriptableObject
     }
 
     public PartType type;
-
-    //public Slider HealthSlider;
+    
     [Range(0, 100)] public int HullHealthChange;
     [Range(0, 5)] public float GunCooldownChange;
     [Range(0, 10)] public float ThrottleChange;
     [Range(0, 10)] public float RotationChange;
 
-    // Start is called before the first frame update
-    void Start()
+    public void ApplyEffect(ShipClass ship)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update() 
-    {
-        
+        switch (type)
+        {
+            case PartType.Hull:
+                ship.HullScript._healthObservable.ApplyChange(HullHealthChange);
+                break;
+            
+            case PartType.Gun:
+                ship.GunScript.GunCooldown -= GunCooldownChange;
+                FindObjectOfType<UI.UI>().OnCooldownChanged(ship.GunScript.GunCooldown);
+                break;
+            
+            case PartType.Engine:
+                ship.EngineScript.ThrottlePower += ThrottleChange;
+                ship.EngineScript.RotationPower += RotationChange;
+                FindObjectOfType<UI.UI>().OnEngineChanged(ship.EngineScript.ThrottlePower, ship.EngineScript.RotationPower);
+                break;
+        }
     }
 }

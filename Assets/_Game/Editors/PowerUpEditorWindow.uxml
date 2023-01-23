@@ -1,16 +1,16 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
     <Style src="project://database/Assets/_Game/Editors/GameEditor.uss?fileID=7433441132597879392&amp;guid=468688dfb3e5fc040a13647bd33b5adb&amp;type=3#GameEditor" />
-    <ui:Label tabindex="-1" text="CUSTOM FIELDS" display-tooltip-when-elided="true" enable-rich-text="true" style="padding-top: 1px; margin-top: 3px; margin-bottom: 5px;" />
+    <ui:Label tabindex="-1" text="POWER-UP EDITOR" display-tooltip-when-elided="true" enable-rich-text="true" style="padding-top: 1px; margin-top: 3px; margin-bottom: 5px; -unity-font: url(&apos;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&apos;); font-size: 38px; color: rgb(63, 98, 200); -unity-text-align: middle-center; white-space: normal; text-overflow: clip; -unity-font-style: bold; -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0); background-color: rgb(102, 207, 214);" />
+    <ui:Label tabindex="-1" text="Choose the part the power-up will affect." display-tooltip-when-elided="true" style="font-size: 19px; -unity-text-align: middle-center;" />
     <ui:EnumField label="Part Type" type="PowerUp+PartType, Assembly-CSharp" binding-path="type" view-data-key="type" name="PartTypeCustom" />
-    <ui:SliderInt picking-mode="Ignore" label="Hull Health Change" value="42" high-value="100" binding-path="HullHealthChange" name="HullHealthChangeCustom" view-data-key="HullHealthChange" show-input-field="true" />
+    <ui:SliderInt picking-mode="Ignore" label="Hull Health Change" value="0" high-value="100" binding-path="HullHealthChange" name="HullHealthChangeCustom" view-data-key="HullHealthChange" show-input-field="true" />
     <ui:Slider picking-mode="Ignore" label="Gun Cooldown Change" value="0" high-value="5" binding-path="GunCooldownChange" name="GunCooldownChangeCustom" view-data-key="GunCooldownChange" show-input-field="true" />
     <ui:Slider picking-mode="Ignore" label="Throttle Change" value="0" high-value="10" binding-path="ThrottleChange" name="ThrottleChangeCustom" view-data-key="ThrottleChange" show-input-field="true" />
     <ui:Slider picking-mode="Ignore" label="Rotation Change" value="0" high-value="10" binding-path="RotationChange" name="RotationChangeCustom" view-data-key="RotationChange" show-input-field="true" />
-    <ui:Label tabindex="-1" text="PROPERTY FIELDS" display-tooltip-when-elided="true" enable-rich-text="true" style="padding-top: 48px; margin-top: 3px; margin-bottom: 5px;" />
-    <uie:PropertyField binding-path="type" label="Part Type" name="PartType" tabindex="1" focusable="false" style="display: flex; visibility: visible;" />
-    <uie:PropertyField binding-path="HullHealthChange" label="Hull Health Change" focusable="false" name="HullHealthChange" />
-    <uie:PropertyField binding-path="GunCooldownChange" name="GunCooldownChange" />
-    <uie:PropertyField binding-path="ThrottleChange" name="ThrottleChange" />
-    <uie:PropertyField binding-path="RotationChange" name="RotationChange" />
-    <ui:Button text="Button" display-tooltip-when-elided="true" />
+    <ui:Label tabindex="-1" text="Preview Values" display-tooltip-when-elided="true" enable-rich-text="true" style="padding-top: 48px; margin-top: 3px; margin-bottom: 5px; display: flex;" />
+    <uie:PropertyField binding-path="RotationChange" name="RotationChange" focusable="false" style="visibility: visible; opacity: 0.35;" />
+    <uie:PropertyField binding-path="HullHealthChange" label="Hull Health Change" focusable="false" name="HullHealthChange" style="opacity: 0.35;" />
+    <uie:PropertyField binding-path="ThrottleChange" name="ThrottleChange" style="opacity: 0.35;" />
+    <uie:PropertyField binding-path="GunCooldownChange" name="GunCooldownChange" style="opacity: 0.35;" />
+    <uie:PropertyField binding-path="type" label="Part Type" name="PartType" tabindex="1" focusable="false" style="display: none; visibility: visible;" />
 </ui:UXML>

@@ -19,6 +19,7 @@ public class ShipClass : MonoBehaviour
     public float GunCooldown;
     public string SavePath = "Assets/_Game/Scripts/Ship";
     public string FileName = "NewShipConfig.asset";
+    public List<PowerUp> ActivePowerUps;
     
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,10 @@ public class ShipClass : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        foreach (var powerUp in ActivePowerUps)
+        {
+            
+        }
     }
     
     public void LoadConfiguration()

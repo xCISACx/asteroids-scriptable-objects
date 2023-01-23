@@ -22,7 +22,7 @@ namespace Editors
         public override VisualElement CreateInspectorGUI()
         {
             m_VisualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/_Game/Editors/PowerUpEditorWindow.uxml");
-            // Each editor window contains a root VisualElement object
+
             var ve = m_VisualTreeAsset.CloneTree();
             
             _partTypeField = ve.Q("PartTypeCustom");
@@ -40,10 +40,8 @@ namespace Editors
             
             _partTypeField.RegisterCallback<ChangeEvent<Enum>>(OnEnumValueChangedEvent);
 
-            // VisualElements objects can contain other VisualElement following a tree hierarchy.
-            //VisualElement label = new Label("Hello World! From C#");
-            //ve.Add(label);
-
+            Repaint();
+            
             // Instantiate UXML
             return ve;
         }

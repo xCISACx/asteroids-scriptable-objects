@@ -6,7 +6,7 @@ namespace Ship
     public class Gun : ShipPart
     {
         [SerializeField] private Laser _laserPrefab;
-        [Range(0.01f,1.0f)][SerializeField] public float GunCooldown = 0.1f;
+        [Range(0f,1.0f)][SerializeField] public float GunCooldown = 0.1f;
         [SerializeField] private float _timeSinceLastShot;
 
         private void Update()
