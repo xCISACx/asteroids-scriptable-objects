@@ -87,7 +87,7 @@ namespace Editors
         {
             Debug.Log($"Value changed. Old value: {evt.previousValue}, new value: {evt.newValue}");
 
-            if (!ShipClass.ShipConfigSO) return;
+            //if (!ShipClass.ShipConfigSO) return;
             
             ShipClass.ShipConfigSO = (ShipConfiguration) _configField.value;
             

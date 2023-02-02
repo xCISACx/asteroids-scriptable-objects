@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9211020e65c46ccbf7bdab376fceef6, type: 3}
-  m_Name: HealthObservable
+  m_Script: {fileID: 11500000, guid: d626a9dfc8fa4f82bb232724372fa572, type: 3}
+  m_Name: NewShipConfig2
   m_EditorClassIdentifier: 
-  _startValue: 49
-  _onValueChangedEvent: {fileID: 11400000, guid: 1c89cb8edd31962449ecaa94187a07fc, type: 2}
+  ThrottlePower: 7.91
+  RotationPower: 5.46
+  MaxHealth: 67
+  GunCooldown: 0.78

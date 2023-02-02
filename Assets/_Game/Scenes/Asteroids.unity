@@ -1015,11 +1015,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2970632031999273638, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: RotationPower
-      value: 4
+      value: 4.54
       objectReference: {fileID: 0}
     - target: {fileID: 2970632031999273638, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: ThrottlePower
-      value: 5
+      value: 6.91
       objectReference: {fileID: 0}
     - target: {fileID: 2970632031999273638, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: _rotationPowerSimple
@@ -1059,7 +1059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2970632033307266020, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: GunCooldown
-      value: 1
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: 2970632033307266020, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: _gunCooldown
@@ -1114,17 +1114,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c554596bf6bf12419bf2ff87a2f86d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShipConfigSO: {fileID: 0}
+  ShipConfigSO: {fileID: 11400000, guid: 2c826f32a934ff646ad50074f665ada8, type: 2}
   EngineScript: {fileID: 2970632032457142650}
-  EngineThrottlePower: 6.91
-  EngineRotationPower: 4.54
+  EngineThrottlePower: 7.91
+  EngineRotationPower: 5.46
   HealthScript: {fileID: 2970632032457142648}
   HullScript: {fileID: 2970632032457142652}
-  MaxHealth: 49
+  MaxHealth: 67
   GunScript: {fileID: 238089999}
-  GunCooldown: 0.63
+  GunCooldown: 0.78
   SavePath: Assets/_Game/Scripts/Ship/Configs/
-  FileName: NewShipConfig.asset
+  FileName: NewShipConfig2.asset
   ActivePowerUps: []
 --- !u!114 &2970632032457142648 stripped
 MonoBehaviour:

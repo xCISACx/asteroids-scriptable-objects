@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
     <ui:Label tabindex="-1" text="Ship Configurator" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 39px; -unity-text-align: middle-center; -unity-text-outline-width: 1px; background-color: rgb(59, 144, 255); color: rgb(7, 0, 142);" />
-    <ui:Label text="References&#10;" style="display: none;">
+    <ui:Label text="References&#10;" style="display: flex;">
         <uie:PropertyField name="GunField" binding-path="GunScript" />
         <uie:PropertyField name="HealthField" binding-path="HealthScript" />
         <uie:PropertyField name="EngineField" binding-path="EngineScript" focusable="false" style="visibility: visible; display: flex; opacity: 1;" />
